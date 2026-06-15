@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cẩm Nang Cấu Hình HTML Head Chuẩn Chỉnh</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>HTML HEAD CHECKLIST</h1>
+    <p>Hướng dẫn cấu hình thẻ Head tối ưu cho lập trình viên Front-End</p>
+  </header>
+
+  <div class="container layout-wrapper">
+
+    <main class="main-content">
+      
+      <section class="checklist-item" id="charset-viewport">
+        <h2>1. Thẻ Meta Charset & Viewport</h2>
+        <p>Đây là hai thẻ bắt buộc phải có ngay sau thẻ mở <code>&lt;head&gt;</code>.</p>
+        <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        <ul>
+          <li><strong>Charset UTF-8:</strong> Giúp trang web hiển thị đúng font tiếng Việt và các ký tự đặc biệt.</li>
+          <li><strong>Viewport:</strong> Đảm bảo trang web responsive, không bị thu nhỏ tí hon trên màn hình điện thoại.</li>
+        </ul>
+      </section>
+
+      <section class="checklist-item" id="title-css">
+        <h2>2. Thẻ Title & Nhúng CSS</h2>
+        <p>Xác định danh tính trang web và liên kết giao diện.</p>
+        <pre><code>&lt;title&gt;Tiêu đề trang&lt;/title&gt;
+&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
+      </section>
+
+      <section class="checklist-item" id="script-js">
+        <h2>3. Thẻ Script JS</h2>
+        <p>Nên đặt thẻ script với thuộc tính <code>defer</code> hoặc đặt ở cuối thẻ <code>&lt;body&gt;</code> để tránh làm chậm tốc độ tải trang (render blocking).</p>
+        <pre><code>&lt;script src="js/script.js" defer&gt;&lt;/script&gt;</code></pre>
+      </section>
+
+      <section class="checklist-item" id="clean-code">
+        <h2>4. Quy tắc Bình luận (Comments) & Thụt dòng (Indentation)</h2>
+        <p>Giúp code rõ ràng, dễ bảo trì khi làm việc nhóm.</p>
+        <ul>
+          <li><strong>Bình luận:</strong> Sử dụng cú pháp <code>&lt;!-- Nội dung bình luận --&gt;</code> để phân tách các vùng UI.</li>
+          <li><strong>Thụt dòng:</strong> Sử dụng nhất quán 2 spaces hoặc 4 spaces (Tab) cho các thẻ con bên trong thẻ cha.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="design-card">
+        <h3>Bản Vẽ Thiết Kế UI</h3>
+        <img src="assets/ui-design.png" alt="Ảnh chụp thiết kế UI của Page" class="ui-img-preview">
+        <p><small>* Giao diện thực tế được code phân vùng dựa theo cấu trúc sơ đồ khối này.</small></p>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>Dự án Mini-project 2 - Thực hiện bởi Nguyễn Trung Nghĩa</p>
+  </footer>
