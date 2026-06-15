@@ -3,7 +3,7 @@
 Dự án hoàn chỉnh hướng dẫn cấu hình các thành phần trong thẻ `<head>` theo đúng tiêu chuẩn công nghiệp, viết code sạch và phân vùng bố cục chuẩn chỉ.
 
 ## 🚀 GitHub Pages (Live Demo)
-- **Link chạy thử:** [DÁN LINK GITHUB PAGES CỦA BẠN VÀO ĐÂY]
+- **Link chạy thử:** https://trunqnghia.github.io/htmlmini/)
 
 ## 📂 Cấu trúc thư mục dự án
 ```text
