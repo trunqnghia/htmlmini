@@ -2,57 +2,82 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Mini-project 2: HTML Head Checklist</title>
+  
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header class="site-header">
     <h1>HTML HEAD CHECKLIST</h1>
-    <p>Hướng dẫn cấu hình thẻ Head tối ưu cho lập trình viên Front-End</p>
+    <p>Hướng dẫn cấu hình thẻ Head chuẩn chỉnh và chuyên nghiệp</p>
   </header>
 
-  <div class="container layout-wrapper">
+  <section class="ui-preview-section">
+    <h2>Sơ đồ phân vùng & Thiết kế UI giao diện</h2>
+    <div class="image-wrapper">
+      <img src="assets/ui-design.png" alt="Ảnh chụp thiết kế UI/Page" class="ui-img">
+    </div>
+  </section>
 
-    <main class="main-content">
-      
-      <section class="checklist-item" id="charset-viewport">
-        <h2>1. Thẻ Meta Charset & Viewport</h2>
-        <pre><code>&lt;meta charset="UTF-8"&gt;
-&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
-      </section>
+  <main class="checklist-container">
+    <h2>Danh sách các mục cần kiểm tra</h2>
 
-      <section class="checklist-item" id="title-css">
-        <h2>2. Thẻ Title & Nhúng CSS</h2>
-        <pre><code>&lt;title&gt;Tiêu đề trang&lt;/title&gt;
-&lt;link rel="stylesheet" href="css/style.css"&gt;</code></pre>
-      </section>
+    <article class="checklist-item">
+      <input type="checkbox" id="item1">
+      <label for="item1">
+        <strong>1. Thẻ meta charset="UTF-8"</strong>
+        <p>Khai báo bảng mã ký tự giúp hiển thị tiếng Việt đúng, không bị lỗi font chữ.</p>
+      </label>
+    </article>
 
-      <section class="checklist-item" id="script-js">
-        <h2>3. Thẻ Script JS</h2>
-        <pre><code>&lt;script src="js/script.js" defer&gt;&lt;/script&gt;</code></pre>
-      </section>
+    <article class="checklist-item">
+      <input type="checkbox" id="item2">
+      <label for="item2">
+        <strong>2. Thẻ meta viewport</strong>
+        <p>Giúp trang web tự động co giãn, tương thích hoàn hảo trên các thiết bị di động.</p>
+      </label>
+    </article>
 
-      <section class="checklist-item" id="clean-code">
-        <h2>4. Quy tắc Bình luận & Thụt dòng</h2>
-        <p>Thụt lề đồng nhất bằng 2 hoặc 4 khoảng trắng và ghi chú rõ ràng.</p>
-      </section>
+    <article class="checklist-item">
+      <input type="checkbox" id="item3">
+      <label for="item3">
+        <strong>3. Thẻ title rõ nghĩa</strong>
+        <p>Định nghĩa tiêu đề xuất hiện trên tab trình duyệt và kết quả tìm kiếm Google.</p>
+      </label>
+    </article>
 
-    </main>
+    <article class="checklist-item">
+      <input type="checkbox" id="item4">
+      <label for="item4">
+        <strong>4. Liên kết CSS ngoài</strong>
+        <p>Sử dụng thẻ <code>&lt;link rel="stylesheet" href="..."&gt;</code> đặt trong phần head.</p>
+      </label>
+    </article>
 
-    <aside class="sidebar">
-      <div class="design-card">
-        <h3>Bản Vẽ Thiết Kế UI</h3>
-        <img src="assets/ui-design.png" alt="Ảnh chụp thiết kế UI của Page" class="ui-img-preview">
-        <p><small>* Giao diện thực tế được phân vùng theo sơ đồ khối này.</small></p>
-      </div>
-    </aside>
+    <article class="checklist-item">
+      <input type="checkbox" id="item5">
+      <label for="item5">
+        <strong>5. Nhúng tệp JavaScript</strong>
+        <p>Đặt thẻ <code>&lt;script src="..."&gt;&lt;/script&gt;</code> ở gần cuối thẻ đóng body để tối ưu tốc độ nạp trang.</p>
+      </label>
+    </article>
 
-  </div>
+    <article class="checklist-item">
+      <input type="checkbox" id="item6">
+      <label for="item6">
+        <strong>6. Bình luận và thụt dòng chuẩn</strong>
+        <p>Dùng cú pháp <code>&lt;!-- --&gt;</code> ghi chú ngắn gọn và thụt dòng lùi vào một mức để nhìn rõ quan hệ cha-con.</p>
+      </label>
+    </article>
+
+  </main>
 
   <footer class="site-footer">
-    <p>Dự án Mini-project 2 - Thực hiện bởi Nguyễn Trung Nghĩa</p>
+    <p>© 2026 - Mini-project hoàn thành bởi Nguyễn Trung Nghĩa</p>
   </footer>
 
   <script src="js/script.js"></script>
